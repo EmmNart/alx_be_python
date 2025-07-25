@@ -1,9 +1,9 @@
 # File: temp_conversion_tool.py
 # Objective: Demonstrate global variable scope through temperature conversion
 
-# Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+# Global conversion factors (must match expected formatting exactly)
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius using global factor."""
@@ -31,6 +31,5 @@ def main():
     except ValueError as ve:
         print(f"Invalid temperature. {ve}")
 
-# Run the main function
 if __name__ == "__main__":
     main()
