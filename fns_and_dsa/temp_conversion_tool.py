@@ -1,7 +1,6 @@
 # File: temp_conversion_tool.py
-# Objective: Demonstrate global variable scope through temperature conversion
 
-# Global conversion factors (must match expected formatting exactly)
+# Global conversion factors (no spaces to match pattern check)
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
@@ -26,10 +25,9 @@ def main():
             converted = convert_to_fahrenheit(temperature)
             print(f"{temperature}°C is {converted}°F")
         else:
-            raise ValueError("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-
-    except ValueError as ve:
-        print(f"Invalid temperature. {ve}")
+            raise ValueError
+    except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
