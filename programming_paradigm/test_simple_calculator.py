@@ -33,7 +33,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(-9, 3), -3)
         self.assertEqual(self.calc.divide(0, 5), 0)
-        self.assertIsNone(self.calc.divide(5, 0))  # Division by zero
+        self.assertIsNone(self.calc.divide(5, 0))  
 
     def test_division_floats(self):
         """Ensure float division works correctly."""
